@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Smart Rocket Enclosure - Gerardo Chavez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html#nav">Projects</a></li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="resume.html">Resume</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://github.com/gchavezsim" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+				<!-- Main -->
+					<div id="main">
+
+						<section class="post">
+							<header class="major">
+								<h1>AFRL Enclosure Project</h1>
+								<div class="image main"><img src="images/main-project-image.jpg" alt="Main Project Image"/></div>
+								<p>An intricate look into the ESP32-controlled environmental management system tailored for aerospace applications in the Mojave Desert.</p>
+							</header>
+						
+							<!-- Project's purpose and challenge -->
+							<p>The project's objective was to design a resilient and secure enclosure that maintains the functionality of sensitive aerospace electronics amidst the Mojave Desert's severe climate variations and the vibrational impact of nearby rocket engine tests.</p>
+						
+							<!-- Core solution with ESP32 and temperature control -->
+							<div class="image main"><img src="images/esp32-in-enclosure.jpg" alt="ESP32 Microcontroller Installation"/></div>
+							<p>The ESP32 microcontroller was the brains of our operation, tasked with real-time environmental monitoring. Its programming controlled a relay-based cooling system, activated or deactivated by a hysteresis algorithm to maintain temperatures within precise thresholds.</p>
+						
+							<!-- Detailing the sensor for door status and high-gain antenna -->
+							<p>A magnetic reed sensor was employed to monitor the door status, alerting the system to potential compromises in the enclosure's seal. To counteract signal attenuation caused by the metallic enclosure, a high-gain 4dBi antenna was utilized, ensuring reliable communication.</p>
+						
+							<!-- Power management with voltage divider and grounding -->
+							<p>Power management was critical, especially considering the remote nature of the location. A 6600 mAh battery provided backup power, while a voltage divider circuit carefully reduced the USB power input from 5V to a GPIO-friendly 3.3V for accurate source detection. Grounding was achieved by connecting the enclosure to the earth ground of a 12V 30A power supply, mitigating potential electrical noise and ensuring data integrity.</p>
+						
+							<!-- Communication, alerts, and web interface -->
+							<div class="image main"><img src="images/web-interface.jpg" alt="Web Application Interface"/></div>
+							<p>The system's communication capabilities were showcased through a web interface that provided real-time data and system status, complemented by an alert system that sent out notifications via email. This setup was crucial for the team to receive timely updates and respond to conditions such as power source changes or temperature fluctuations.</p>
+							<div class="image main"><img src="images/automated-email-alert.jpg" alt="Sample Automated Email Alert"/></div>
+							<p>Here is a sample alert email, illustrating the system's capability to automatically communicate critical status changes, keeping the Air Force's team updated and the electronics secure.</p>
+						</section>
+						
+							
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Palmdale, CA<br />
+								</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:818-916-9212">(818) 916-9212</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:gchavezsim@gmail.com">gchavezsim@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/gchavezsim" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+			</div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+	</body>
+</html>
