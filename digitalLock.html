@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Digital FPGA Lock - Gerardo Chavez</title>
+		<title>Digital VHDL Lock - Gerardo Chavez</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +14,6 @@
 
 				<!-- Header -->
 					<header id="header">
-
 					</header>
 
 				<!-- Nav -->
@@ -34,97 +28,60 @@
 					</ul>
 				</nav>
 
-  <!-- Main -->
-<div id="main">
+				<!-- Main -->
+					<div id="main">
 
-    <!-- Post -->
-    <section class="post">
-      <header class="major">
-        <!--<span class="date">April 25, 2017</span>-->
-        <h1>Digital FPGA Lock</h1>
-        <p>Welcome to the Digital Lock project! This engaging endeavor allowed me to showcase my skills in VHDL programming and digital circuit design using the Vivado Software and Basys 3 board. With a given state diagram representation and digital circuit design, I successfully implemented a fully functional digital lock on the Basys 3 board.</p>
-      </header>
-      <!-- Add any relevant images here if available -->
-      <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-      <p>The digital lock operated based on a predefined state diagram that specified how the lock should function. Using VHDL programming, I meticulously translated the state diagram into a working digital circuit. The Vivado Software provided a powerful platform for designing and simulating the digital lock, ensuring a seamless integration of hardware and software components.</p>
-      <p>On the Basys 3 board, users could interact with the digital lock by pressing the correct button combination, following the state transitions defined in the state diagram. When the correct sequence was entered, the leftmost LED on the Basys 3 board indicated that the lock was successfully unlocked. Conversely, if an incorrect combination was entered, the rightmost LED indicated that the lock remained locked.</p>
-      <p>The project's successful implementation demonstrated my ability to apply theoretical concepts of digital circuit design and VHDL programming to create a practical and functional system. The Digital Lock project served as a valuable opportunity to enhance my skills in FPGA development, logic design, and hardware-software integration.</p>
-      <p><em>Key Components and Features:</em></p>
-      <ul>
-        <li>VHDL Programming: I utilized VHDL programming to implement the digital lock based on the given state diagram.</li>
-        <li>Vivado Software: The Vivado Software provided a robust environment for designing, simulating, and deploying the digital lock onto the Basys 3 board.</li>
-        <li>Basys 3 Board: The Basys 3 board served as the hardware platform for the digital lock, allowing user interaction through button inputs and LED outputs.</li>
-        <li>User Interaction: Users could input the correct button combination to unlock the digital lock.</li>
-        <li>LED Indicators: The leftmost LED indicated the unlocked state, while the rightmost LED indicated the locked state of the digital lock.</li>
-      </ul>
-      <!-- Feel free to add more information or details about the project here -->
-  
-      <!-- You can use the following template to add images if needed -->
-      <!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
-  
-    </section>
-  
-  </div>
-  
-  
-  
-  </div>
-  
-
-				<!-- Footer -->
-					<footer id="footer">
-						<!--<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>-->
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p>Palmdale, CA<br />
-								</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="tel:818-916-9212">(818) 916-9212</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:gchavezsim@gmail.com">gchavezsim@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://github.com/gchavezsim" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
+						<section class="post">
+							<header class="major">
+								<h1>Digital VHDL Lock</h1>
+								<div class="image main"><img src="images/digitalLock.GIF" alt="State Diagram of Digital Lock"/></div>
+								<p>An exploration into digital system design: a VHDL-implemented lock utilizing a state machine for secure access control on a Basys3 FPGA board.</p>
+							</header>
+						
+							<!-- Introduction to the project -->
+							<p>The Digital VHDL Lock project demonstrates the design of a secure system using state machines and flip flops, simulated and implemented on the Basys3 FPGA board with Vivado Software. The lock's operation, dictated by a specific button combination, is a testament to practical VHDL applications in security.</p>
+						
+							<!-- State Diagram and operation -->
+							<div class="image main"><img src="images/state diagram.png" alt="Vivado Simulation of Digital Lock"/></div>
+							<p>The project's core is a state diagram that outlines the lock's functionality. In its default state, the system awaits a correct input to transition to a secure state, while incorrect attempts lead to an error state, both visually represented by LEDs.</p>
+							
+							<!-- VHDL Simulation -->
+							<div class="image main"><img src="images/lock simulation.png" alt="Vivado Simulation of Digital Lock"/></div>
+							<p>The Vivado simulation confirms the lock's behavior, displaying how the system reacts to input sequences. A correct sequence turns on the rightmost LED, indicating access granted, while an incorrect one triggers the leftmost LED, signaling denied access.</p>
+						
+							<!-- Conclusion -->
+							<p>This lab's success in creating a functioning digital lock provided valuable insights into digital system design, deepening my understanding of VHDL and state machine concepts.</p>
 						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						
 					</div>
 
+				<!-- Footer -->
+				<footer id = "footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Location</h3>
+							<p>Palmdale, CA<br />
+							</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="tel:818-916-9212">(818) 916-9212</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:gchavezsim@gmail.com">gchavezsim@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://github.com/gchavezsim" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
 			</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

@@ -14,7 +14,7 @@
 			</header>
 			<nav id="nav">
 				<ul class="links">
-					<li><a href="index.html">Projects</a></li>
+					<li><a href="index.html#nav">Projects</a></li>
 					<li><a href="about.html">About Me</a></li>
 					<li><a href="resume.html">Resume</a></li>
 				</ul>
@@ -26,13 +26,15 @@
 				<section class="post">
 					<header class="major">
 						<h1>Arduino Temperature Thermostat</h1>
-						<div class="image main"><img src="images/temp.gif" alt="Cooling System Operation GIF" /></div>
+						<div class="image main"><img src="images/temp.gif" alt="Cooling System Operation GIF" style="display: block; margin: 0 auto; width:75%; height:auto;"/></div>
 						<p>Welcome to the Arduino Temperature Thermostat project! This project is designed to function as a thermostat, combining electronics, software, and analog circuits. It incorporates an Arduino, temperature sensor, potentiometer for temperature setting, a 7-segment display, and a custom PCB for added 12V cooling system control.</p>
 					</header>
 					<p>The initial state of the thermostat is set to display the temperature in Celsius. When you press the button, you switch to the Celsius state. Pressing the second button allows you to enter the temperature setting mode. You can configure the desired temperature using a potentiometer, creatively utilizing Arduino's analog input pins. When you press the second button, the thermostat is configured, and the cooling system turns on if the current temperature exceeds the set threshold, turning off once the temperature falls below the threshold. This state-based systematic approach ensures precise temperature control.</p>
 					<p>The cooling system is controlled using a relay, facilitated by a BJT transistor that acts as a switch. The relay turns the cooling system on and off, effectively maintaining the desired temperature range. A custom PCB, designed with KiCad, ensures a reliable and efficient circuit, with additional pins to connect another 12V cooling system.</p>
 					<p>Notably, the implementation of the 74HC595 shift register was highly significant as the 7-segment display required 12 pins, while the Arduino board only had 12 inputs available. By utilizing the shift register, I efficiently managed to control the display with a lesser number of Arduino pins, optimizing the use of available resources.</p>
+					<div class="image main"><img src="images/tempBreadboard.jpg" alt="Breadboard Testing of the Whole System" style="display: block; margin: 0 auto; width:45%; height:auto;"/></div>
 					<p>This project provided extensive learning opportunities in analog circuits (relays and BJTs), digital logic (state machines), C++ programming, and schematic capture and PCB design.</p>
+					<div class="image main"><img src="images/temp_schematics.jpg" alt="PCB of the Whole System"/></div>
 					<p><em>Key Components and Features:</em></p>
 					<ul>
 						<li>Thermostat Functionality: Maintain precise control over the temperature within your specified range.</li>
